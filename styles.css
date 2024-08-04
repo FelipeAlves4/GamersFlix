@@ -63,3 +63,15 @@ p{
 .video{
     padding-right: 25px;
 }
+
+footer{
+    padding: 25px;
+    text-align: left;
+    color: #fff;
+    margin-top: 50px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    
+    p{
+        font-size: 18px;
+    }
+}
