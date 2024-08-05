@@ -3,7 +3,7 @@ body {
     background: black;
     margin: 0px;
     font-family: "Poppins", sans-serif;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
     
 }
 
@@ -12,6 +12,7 @@ header {
     padding: 20px;
     font-size: 32px;
     color: rgb(42, 122, 228);
+    box-shadow: 0 4px 8px rgb(11, 4, 107);
 }
 
 .chamada{
