@@ -20,6 +20,9 @@ header {
 	padding-top: 80px;
 	display: flex;
 	justify-content: center;
+    border-radius: 15px ;
+    margin: 20px;
+     
 }
 .chamada-texto{
     margin: 5%;
@@ -54,6 +57,7 @@ p{
 .monitores img:hover{
     opacity: 1.0;
     border: 1px solid purple;
+
 }
 
 .beneficio{
@@ -62,4 +66,16 @@ p{
 
 .video{
     padding-right: 25px;
+}
+
+footer{
+    padding: 25px;
+    text-align: left;
+    color: #fff;
+    margin-top: 50px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    
+    p{
+        font-size: 18px;
+    }
 }
