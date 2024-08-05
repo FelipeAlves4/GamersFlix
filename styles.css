@@ -4,7 +4,7 @@ body {
     margin: 0px;
     font-family: "Poppins", sans-serif;
     margin-bottom: 100px; 
-    
+
 }
 
 header {
@@ -13,25 +13,56 @@ header {
     font-size: 32px;
     color: rgb(42, 122, 228);
     box-shadow: 0 4px 8px rgb(11, 4, 107);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+nav h1{
+    font-size: 30px;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(42, 122, 228);
+}
+
 
 .chamada{
 	background: rgb(184,156,213);
 	padding-bottom: 80px;
-	padding-top: 80px;
+	padding-top: 80px ;
 	display: flex;
 	justify-content: center;
     border-radius: 15px ;
     margin: 20px;
-     
+    align-items: center;
 }
+
 .chamada-texto{
     margin: 5%;
 }
 
-h1{
+h2{
     font-size: 35px;
 }
+
 
 p{
     font-size: 20px;
@@ -42,6 +73,7 @@ p{
     display: flex;
     overflow-x: auto;
     gap: 15px; 
+    flex-wrap: wrap;
 }
 .moni-custo{
     padding-left: 20px;
@@ -50,15 +82,15 @@ p{
 }
 
 .monitores img{
-    opacity: 0.5;
+    opacity: 0.7;
     height: 250px;
-
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 .monitores img:hover{
     opacity: 1.0;
     border: 1px solid purple;
-
+    transform: scale(1.05);
 }
 
 .beneficio{
@@ -76,6 +108,7 @@ footer{
     margin-top: 50px;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
     
+
     p{
         font-size: 18px;
     }
