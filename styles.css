@@ -20,6 +20,9 @@ header {
 	padding-top: 80px;
 	display: flex;
 	justify-content: center;
+    border-radius: 15px ;
+    margin: 20px;
+     
 }
 .chamada-texto{
     margin: 5%;
@@ -54,6 +57,7 @@ p{
 .monitores img:hover{
     opacity: 1.0;
     border: 1px solid purple;
+
 }
 
 .beneficio{
