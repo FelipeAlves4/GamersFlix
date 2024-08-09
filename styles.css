@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 .monitores img {
-    opacity: 0.8;
+    opacity: 0.7;
     height: 250px;
     transition: opacity 0.3s, transform 0.3s;
     border-radius: 10px;
