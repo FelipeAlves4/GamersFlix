@@ -1,10 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Gamersflix</title>
 </head>
@@ -13,76 +15,90 @@
     <header id="header">
         <nav>
             <h1>GAMERSFLIX</h1>
-                 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#monitores">Monitores</a></li>
-                <li><a href="#placas-mae">Placas-Mãe</a></li>
-                <li><a href="#placas-video">Placas de Vídeo</a></li>               
-            </ul>
+
+            <!-- Ícone de Menu -->
+            <div id="menu-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Menu Lateral -->
+            <div id="side-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#monitores">Monitores</a></li>
+                    <li><a href="#placas-mae">Placas-Mãe</a></li>
+                    <li><a href="#placas-video">Placas de Vídeo</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
         </nav>
     </header>
 
-    <section id="home"  class="chamada">
+    <section id="home" class="chamada">
         <div class="chamada-texto">
             <h2>PC Ideal e PC tope de linha </h2>
-            <p>Qual a melhor configuração para um bom PC Gamer, com um preço competitivo? Este guia vai dar indicações das melhores peças e os melhores orçamentos para montar máquinas equilibradas, 
-            focadas em um computador com boa performance para jogar e, por consequência, 
-            para trabalhar com softwares pesados.</p>
+            <p>Qual a melhor configuração para um bom PC Gamer, com um preço competitivo? Este guia vai dar indicações
+                das melhores peças e os melhores orçamentos para montar máquinas equilibradas,
+                focadas em um computador com boa performance para jogar e, por consequência,
+                para trabalhar com softwares pesados.</p>
         </div>
 
-        <div class="video"> 
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/fyQtUdLE32o?si=qL4VmbnSkEuX8lap"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fyQtUdLE32o?si=qL4VmbnSkEuX8lap"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
         </div>
     </section>
 
-    <section id="monitores" class="moni-custo"> 
+    <section id="monitores" class="moni-custo">
         <h2 class="beneficio">Melhores monitores custo beneficio! </h2>
         <div class="monitores">
             <a href="https://www.youtube.com/watch?v=vpKCwA_Rcuc">
-                <img src="https://img.youtube.com/vi/vpKCwA_Rcuc/maxresdefault.jpg"/>
+                <img src="https://img.youtube.com/vi/vpKCwA_Rcuc/maxresdefault.jpg" />
             </a>
-        
-        
+
+
             <a href="https://www.youtube.com/watch?v=fj4fznc3FNc">
-                <img src="https://img.youtube.com/vi/fj4fznc3FNc/maxresdefault.jpg"/>
+                <img src="https://img.youtube.com/vi/fj4fznc3FNc/maxresdefault.jpg" />
             </a>
-        
-        
+
+
             <a href="https://www.youtube.com/watch?v=fiyxn0JPx3U">
-                <img src="https://img.youtube.com/vi/fiyxn0JPx3U/maxresdefault.jpg"/>
+                <img src="https://img.youtube.com/vi/fiyxn0JPx3U/maxresdefault.jpg" />
             </a>
-        
-        
+
+
             <a href="https://www.youtube.com/watch?v=tGI9RTpNBOc">
-                <img src="https://img.youtube.com/vi/tGI9RTpNBOc/maxresdefault.jpg"/>
+                <img src="https://img.youtube.com/vi/tGI9RTpNBOc/maxresdefault.jpg" />
             </a>
-    
-        
+
+
             <a href="https://www.youtube.com/watch?v=xJ0UTncX378">
-                <img src="https://img.youtube.com/vi/xJ0UTncX378/maxresdefault.jpg"/>
+                <img src="https://img.youtube.com/vi/xJ0UTncX378/maxresdefault.jpg" />
             </a>
         </div>
     </section>
-    
-    <section id="placas-mae"  class="moni-custo">
+
+    <section id="placas-mae" class="moni-custo">
         <h2 class="beneficio">Melhores placas-mãe para jogos</h2>
         <div class="monitores">
-            <a  href="https://www.youtube.com/watch?v=wM08YuIpWxg">
-                <img src="https://img.youtube.com/vi/wM08YuIpWxg/maxresdefault.jpg"/>
+            <a href="https://www.youtube.com/watch?v=wM08YuIpWxg">
+                <img src="https://img.youtube.com/vi/wM08YuIpWxg/maxresdefault.jpg" />
             </a>
             <a href="https://www.youtube.com/watch?v=5sXUkFYsPqA">
-                <img src="https://img.youtube.com/vi/5sXUkFYsPqA/maxresdefault.jpg"/>
+                <img src="https://img.youtube.com/vi/5sXUkFYsPqA/maxresdefault.jpg" />
             </a>
             <a href="https://www.youtube.com/watch?v=j_W9SNprPic">
-                <img src="https://img.youtube.com/vi/j_W9SNprPic/maxresdefault.jpg"/>
+                <img src="https://img.youtube.com/vi/j_W9SNprPic/maxresdefault.jpg" />
             </a>
             <a href="https://www.youtube.com/watch?v=8d1slSfod6c">
-                <img src="https://img.youtube.com/vi/8d1slSfod6c/maxresdefault.jpg"/>
+                <img src="https://img.youtube.com/vi/8d1slSfod6c/maxresdefault.jpg" />
             </a>
-            
+
         </div>
     </section>
 
@@ -90,29 +106,29 @@
         <h2 class="beneficio">Melhores placas de vídeo para jogos</h2>
         <div class="monitores">
             <a href="https://www.youtube.com/watch?v=lZ0FppdYAzM">
-                <img src="https://img.youtube.com/vi/lZ0FppdYAzM/maxresdefault.jpg" alt="Placa de Vídeo 1"/>
+                <img src="https://img.youtube.com/vi/lZ0FppdYAzM/maxresdefault.jpg" alt="Placa de Vídeo 1" />
             </a>
             <a href="https://www.youtube.com/watch?v=9VxDnCb0IEs">
-                <img src="https://img.youtube.com/vi/9VxDnCb0IEs/maxresdefault.jpg" alt="Placa de Vídeo 2"/>
+                <img src="https://img.youtube.com/vi/9VxDnCb0IEs/maxresdefault.jpg" alt="Placa de Vídeo 2" />
             </a>
             <a href="https://www.youtube.com/watch?v=CQq2Iy3kKWk">
-                <img src="https://img.youtube.com/vi/CQq2Iy3kKWk/maxresdefault.jpg" alt="Placa de Vídeo 3"/>
+                <img src="https://img.youtube.com/vi/CQq2Iy3kKWk/maxresdefault.jpg" alt="Placa de Vídeo 3" />
             </a>
             <a href="https://www.youtube.com/watch?v=nkBnDL6DsLo">
-                <img src="https://img.youtube.com/vi/nkBnDL6DsLo/maxresdefault.jpg" alt="Placa de Vídeo 4"/>
+                <img src="https://img.youtube.com/vi/nkBnDL6DsLo/maxresdefault.jpg" alt="Placa de Vídeo 4" />
             </a>
         </div>
     </section>
-    
-    <button id="topBtn" title="Go to top">Top</button>    
-    
+
+    <button id="topBtn" title="Go to top">Top</button>
+
     <footer>
         <p>Desenvolvido por: <a href="https://www.instagram.com/felipe_alvesrodri/" target="_blank">
-            <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" 
-            width="67" height="35" alt="instagram logo"  /> </p>
+                <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg"
+                    width="67" height="35" alt="instagram logo" /> </p>
     </footer>
 
     <script src="script.js"> </script>
 </body>
-    
+
 </html>
