@@ -18,13 +18,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: top 0.3s;
+    transition: top 0.3s, background-color 0.3s;
 }
 
 header.hidden {
     top: -100px;
 }
-
 nav h1 {
     font-size: 36px;
     margin: 0;
@@ -212,17 +211,19 @@ footer img {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #2a7ae4;
+    background: radial-gradient(circle, #2a7ae4, #121212);
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 50%;
     font-size: 18px;
-    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #topBtn:hover {
-    background-color: #393434;
+    transform: scale(1.2);
+    box-shadow: 0 6px 15px rgba(42, 122, 228, 0.8);
 }
 
 /* Media Queries */
