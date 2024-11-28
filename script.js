@@ -46,3 +46,21 @@ interactiveElements.forEach(element => {
 });
 
 
+const carousel = document.querySelector('.carousel');
+
+function scrollCarousel(direction) {
+    const scrollAmount = 320; // Defina o tamanho do deslocamento
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth',
+    });
+}
+
+function scrollCarousel(direction, section) {
+    const carousel = document.querySelector(`.carousel.${section}`);
+    const scrollAmount = 320; // Defina o tamanho do deslocamento
+    carousel.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth',
+    });
+}
