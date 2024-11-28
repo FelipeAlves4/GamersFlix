@@ -26,7 +26,7 @@ topBtn.onclick = function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 };
-
+    
 // Controle do Menu Lateral
 function toggleMenu() {
     const menuIcon = document.getElementById("menu-icon");
