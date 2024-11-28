@@ -123,6 +123,45 @@ nav ul li a:hover {
     left: 0;
 }
 
+/* Efeito de transição para o menu lateral */
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1e1e1e;
+  transition: left 0.3s ease-in-out;
+}
+
+#side-menu.open {
+  left: 0;
+}
+
+#menu-icon {
+  cursor: pointer;
+}
+
+#menu-icon span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 6px 0;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+#menu-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+#menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
 
 /* Seção de Chamada */
 .chamada {
