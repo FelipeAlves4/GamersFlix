@@ -194,6 +194,16 @@ nav ul li a:hover {
 }
 
 /* Seções de Conteúdo */
+/* Transição suave entre as seções */
+section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  section.visible {
+    opacity: 1;
+  }
+
 .moni-custo {
     padding: 20px;
     margin-top: 50px;

@@ -1,9 +1,15 @@
+
 // Botão de Voltar ao Topo
 var topBtn = document.getElementById("topBtn");
 var header = document.getElementById("header");
 
 window.onscroll = function () {
     scrollFunction();
+    document.querySelectorAll('section').forEach((section) => {
+        if (window.scrollY + window.innerHeight >= section.offsetTop) {
+          section.classList.add('visible');
+        }
+      });
 };
 
 function scrollFunction() {
@@ -38,3 +44,5 @@ interactiveElements.forEach(element => {
         sound.play();
     });
 });
+
+
