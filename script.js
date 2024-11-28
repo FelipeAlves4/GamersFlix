@@ -1,3 +1,26 @@
+// Botão de Voltar ao Topo
+var topBtn = document.getElementById("topBtn");
+var header = document.getElementById("header");
+
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+        header.classList.add("hidden");
+    } else {
+        topBtn.style.display = "none";
+        header.classList.remove("hidden");
+    }
+}
+
+topBtn.onclick = function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
+
 // Controle do Menu Lateral
 function toggleMenu() {
     const menuIcon = document.getElementById("menu-icon");
@@ -6,33 +29,12 @@ function toggleMenu() {
     sideMenu.classList.toggle("open");
 }
 
-// Efeito Sonoro nos Links
-const buttons = document.querySelectorAll("a, button");
-buttons.forEach(button => {
-    button.addEventListener("mouseenter", () => {
+// Efeito Sonoro nos Botões e Links
+const interactiveElements = document.querySelectorAll("a, button");
+
+interactiveElements.forEach(element => {
+    element.addEventListener("mouseenter", () => {
         const sound = new Audio('https://freesound.org/data/previews/342/342756_5121236-lq.mp3');
         sound.play();
     });
 });
-
-
-
-var topBtn = document.getElementById("topBtn");
-        window.onscroll = function() {scrollFunction()};
-        var header = document.getElementById("header");
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                topBtn.style.display = "block";
-                header.classList.add("hidden");
-            } else {
-                topBtn.style.display = "none";
-                header.classList.remove("hidden");
-            }
-        }
-
-topBtn.onclick = function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
