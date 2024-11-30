@@ -98,7 +98,7 @@ header.hidden {
 }
 
 #side-menu ul li a:hover {
-    background-color: #2a7ae4;
+    background-color: #e46e2a;
     transform: translateX(10px);
 }
 
@@ -129,8 +129,8 @@ header.hidden {
 #menu-icon span {
   display: block;
   width: 30px;
-  height: 3px;
-  margin: 6px 0;
+  height: 4px;
+  margin: 1px 0;
   background-color: #fff;
   transition: transform 0.3s ease;
 }
